@@ -1,1 +1,11 @@
-
+name: Deploy AWS lamda
+on: 
+  push:
+    branches:
+      -main
+      paths:
+       -'lamda/'
+      jobs:
+        deploy-lamda:
+          runs-on: ubuntu-latest
+          
